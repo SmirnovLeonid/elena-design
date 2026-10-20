@@ -1,0 +1,395 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Елена Голливудова — вариант-1-золото</title><style>html,body{margin:0;padding:0}</style></head><body><!-- ВАРИАНТ 1 · GOLD GLAM · вставить целиком в блок T123 (HTML) в Tilda -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+.gl{--bg:#09080c;--bg2:#121018;--ink:#f4ecdc;--mute:#a9a193;--g1:#fff1c1;--g2:#f2c14e;--g3:#b8862b;--line:rgba(242,193,78,.28);
+  --gold:linear-gradient(120deg,#fff1c1 0%,#f2c14e 35%,#b8862b 62%,#ffe08a 100%);
+  background:var(--bg);color:var(--ink);font-family:'Manrope',sans-serif;font-size:17px;line-height:1.6;overflow-x:clip;position:relative}
+.gl *{box-sizing:border-box;margin:0;padding:0}
+.gl a{color:inherit;text-decoration:none}
+.gl img{display:block;max-width:100%}
+.gl .wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.gl .serif{font-family:'Playfair Display',serif}
+.gl .gold{background:var(--gold);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.gl .eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--g2);font-weight:600}
+.gl h2{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(36px,5.4vw,72px);line-height:1.04;letter-spacing:-.01em}
+.gl h2 em{font-style:italic;font-weight:500}
+.gl section{padding:110px 0;position:relative}
+
+/* nav */
+.gl .nav{position:sticky;top:0;z-index:50;background:rgba(9,8,12,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.gl .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.gl .logo{font-family:'Playfair Display',serif;font-weight:900;font-size:22px;letter-spacing:.04em}
+.gl .nav ul{display:flex;gap:26px;list-style:none;font-size:14px;color:var(--mute)}
+.gl .nav ul a:hover{color:var(--g2)}
+.gl .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:99px;font-weight:700;font-size:14px;letter-spacing:.04em;cursor:pointer;transition:.3s;border:1px solid transparent}
+.gl .btn.fill{background:var(--gold);color:#1a1204;box-shadow:0 8px 30px rgba(242,193,78,.25)}
+.gl .btn.fill:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(242,193,78,.45)}
+.gl .btn.line{border-color:var(--line);color:var(--ink)}
+.gl .btn.line:hover{border-color:var(--g2);color:var(--g2)}
+
+/* hero */
+.gl .hero{padding:70px 0 90px;overflow:hidden}
+.gl .hero::before{content:"";position:absolute;width:900px;height:900px;right:-250px;top:-250px;background:radial-gradient(circle,rgba(242,193,78,.22),transparent 62%);pointer-events:none}
+.gl .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;position:relative}
+.gl .hero h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(52px,8.6vw,128px);line-height:.92;letter-spacing:-.02em;margin:22px 0 28px}
+.gl .hero h1 em{display:block;font-style:italic;font-weight:500}
+.gl .tag{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:clamp(15px,1.6vw,20px);font-weight:600;margin-bottom:12px}
+.gl .tag span{display:flex;align-items:center;gap:22px}
+.gl .tag span:not(:last-child)::after{content:"✦";color:var(--g2);font-size:13px}
+.gl .hero .sub{color:var(--mute);max-width:520px;margin-bottom:34px}
+.gl .hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.gl .arch{position:relative;justify-self:center;width:min(440px,100%)}
+.gl .arch .frame{border-radius:999px 999px 24px 24px;padding:10px;background:var(--gold);box-shadow:0 30px 90px rgba(242,193,78,.25)}
+.gl .arch .frame img{border-radius:990px 990px 16px 16px;width:100%;aspect-ratio:3/4.2;object-fit:cover;object-position:50% 25%}
+.gl .badge{position:absolute;left:-46px;bottom:48px;width:128px;height:128px;border-radius:50%;background:var(--bg);border:1px solid var(--g2);display:grid;place-items:center;text-align:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;line-height:1.3;color:var(--g1);animation:glspin 18s linear infinite}
+.gl .badge b{display:block;font-family:'Playfair Display',serif;font-size:40px;letter-spacing:0;color:var(--g2)}
+@keyframes glspin{to{transform:rotate(360deg)}}
+.gl .spark{position:absolute;color:var(--g2);animation:gltw 3s ease-in-out infinite}
+.gl .spark.s1{top:10%;left:-12px;font-size:26px}.gl .spark.s2{top:34%;right:-20px;font-size:18px;animation-delay:.8s}.gl .spark.s3{bottom:6%;right:12%;font-size:30px;animation-delay:1.6s}
+@keyframes gltw{0%,100%{opacity:.2;transform:scale(.7) rotate(0)}50%{opacity:1;transform:scale(1.15) rotate(20deg)}}
+
+/* marquee */
+.gl .mq{border-block:1px solid var(--line);background:var(--bg2);overflow:hidden;white-space:nowrap;padding:20px 0}
+.gl .mq div{display:inline-block;animation:glmq 28s linear infinite;font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(24px,3vw,40px)}
+.gl .mq span{margin:0 22px}.gl .mq i{color:var(--g2);font-style:normal;font-size:.6em}
+@keyframes glmq{to{transform:translateX(-50%)}}
+
+/* about */
+.gl .about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.gl .about p.lead{color:var(--mute);margin:26px 0 12px;max-width:480px}
+.gl .about p.lead b{color:var(--ink)}
+.gl .svc{list-style:none;counter-reset:s}
+.gl .svc li{display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);font-size:clamp(18px,2vw,24px);font-family:'Playfair Display',serif;transition:.3s}
+.gl .svc li:first-child{border-top:1px solid var(--line)}
+.gl .svc li:hover{padding-left:14px;color:var(--g1)}
+.gl .svc li i{font-family:'Manrope',sans-serif;font-style:normal;font-size:13px;letter-spacing:.2em;color:var(--g2);font-weight:700}
+.gl .tour{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;color:var(--mute);font-size:15px}
+.gl .tour span{border:1px solid var(--line);border-radius:99px;padding:6px 16px;color:var(--ink);font-size:14px}
+
+/* stats */
+.gl .stats{padding:0 0 110px}
+.gl .stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.gl .stat{background:linear-gradient(160deg,#17141d,#0e0c13);border:1px solid var(--line);border-radius:28px;padding:38px 34px}
+.gl .stat b{display:block;font-family:'Playfair Display',serif;font-size:clamp(56px,7vw,100px);line-height:1;font-weight:900;margin-bottom:12px}
+.gl .stat p{color:var(--mute);font-size:15px}
+.gl .stat.big{background:var(--gold);color:#1a1204;border:0}
+.gl .stat.big b{background:none;-webkit-text-fill-color:#1a1204;font-size:clamp(34px,4vw,56px);font-style:italic}
+.gl .stat.big p{color:#3b2a08}
+
+/* how */
+.gl .how{background:var(--bg2)}
+.gl .how .hd{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+.gl .how .hd p{max-width:380px;color:var(--mute)}
+.gl .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.gl .step{border:1px solid var(--line);border-radius:26px;padding:32px;position:relative;background:var(--bg);transition:.35s}
+.gl .step:hover{transform:translateY(-6px);border-color:var(--g2)}
+.gl .step .n{font-family:'Playfair Display',serif;font-size:64px;font-weight:900;font-style:italic;line-height:1;opacity:.9}
+.gl .step h3{font-family:'Playfair Display',serif;font-size:26px;margin:14px 0 10px}
+.gl .step p{color:var(--mute);font-size:15px}
+.gl .step ul{list-style:none;color:var(--mute);font-size:15px}
+.gl .step li{padding:3px 0 3px 22px;position:relative}
+.gl .step li::before{content:"✦";position:absolute;left:0;color:var(--g2);font-size:11px;top:8px}
+.gl .fb{margin-top:34px;text-align:center;color:var(--mute);font-style:italic}
+
+/* looks */
+.gl .looks .hd{text-align:center;margin-bottom:52px}
+.gl .looks .hd p{color:var(--mute);margin-top:18px}
+.gl .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.gl .chips span{padding:13px 24px;border:1px solid var(--line);border-radius:99px;font-size:16px;transition:.3s;cursor:default;background:rgba(255,255,255,.02)}
+.gl .chips span:hover{background:var(--gold);color:#1a1204;border-color:transparent;transform:translateY(-3px) rotate(-2deg)}
+.gl .looks .cta{text-align:center;margin-top:48px}
+
+/* shows */
+.gl .shows{background:var(--bg2)}
+.gl .shows .hd{margin-bottom:70px}
+.gl .show{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;padding:46px 0;border-top:1px solid var(--line)}
+.gl .show:nth-child(even) .txt{order:2}
+.gl .show h3{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,54px);line-height:1.05;margin:14px 0 18px}
+.gl .show p{color:var(--mute);max-width:480px}
+.gl .show .q{font-family:'Playfair Display',serif;font-style:italic;color:var(--ink);font-size:20px;margin-bottom:14px;line-height:1.4}
+.gl .ph{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,170px);gap:10px}
+.gl .ph img{width:100%;height:100%;object-fit:cover;border-radius:16px;cursor:zoom-in;transition:.4s}
+.gl .ph img:hover{transform:scale(1.03)}
+.gl .ph img:first-child{grid-row:span 2;border-radius:90px 90px 16px 16px}
+.gl .ph img:nth-child(2){grid-column:span 2}
+.gl .rail figure{min-height:180px}
+
+/* clients */
+.gl .clients .wrap{text-align:center}
+.gl .clients .chips{margin-top:46px}
+.gl .clients .chips span{font-family:'Playfair Display',serif;font-style:italic;font-size:20px;padding:12px 26px}
+.gl .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px;text-align:left}
+.gl .facts div{padding:26px;border-left:2px solid var(--g2);color:var(--mute);font-size:15px}
+.gl .facts b{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}
+
+/* reviews */
+.gl .rev{background:var(--bg2);padding-bottom:90px}
+.gl .rev .hd{margin-bottom:44px}
+.gl .rail{display:flex;gap:18px;overflow-x:auto;padding:6px 28px 28px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--g3) transparent}
+.gl .rail figure{flex:0 0 300px;scroll-snap-align:start;background:#fff;border-radius:22px;padding:6px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.gl .rail img{border-radius:16px;width:100%;cursor:zoom-in}
+.gl .hint{text-align:center;color:var(--mute);font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+
+/* gallery */
+.gl .gal .hd{margin-bottom:46px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px}
+.gl .masonry{columns:4 240px;column-gap:14px}
+.gl .masonry figure{break-inside:avoid;margin-bottom:14px;border-radius:18px;overflow:hidden;position:relative}
+.gl .masonry img{width:100%;cursor:zoom-in;transition:.5s}
+.gl .masonry figure:hover img{transform:scale(1.06)}
+
+/* why */
+.gl .why{text-align:center;overflow:hidden}
+.gl .why::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(242,193,78,.2),transparent 60%)}
+.gl .why .wrap{position:relative}
+.gl .why .num{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(90px,18vw,260px);line-height:.9}
+.gl .why .num small{display:block;font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-family:'Manrope',sans-serif;color:var(--mute);font-weight:600;margin-top:10px;-webkit-text-fill-color:var(--mute)}
+.gl .why p.t{max-width:640px;margin:34px auto 0;font-size:20px}
+
+/* contacts */
+.gl .contact{border-top:1px solid var(--line);text-align:center;background:var(--bg2)}
+.gl .contact h2{max-width:900px;margin:18px auto 44px}
+.gl .links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.gl .tel{margin-top:30px;color:var(--mute)}
+.gl .tel a{color:var(--g1);font-weight:700}
+.gl .note{margin-top:60px;font-size:12px;color:#6f685c}
+
+/* reveal */
+.gl.eh-js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s ease}
+.gl.eh-js .rv.in{opacity:1;transform:none}
+
+.gl .logo{white-space:nowrap}
+.gl .nav .btn{white-space:nowrap;padding:11px 20px}
+@media(max-width:1100px){.gl .nav .wrap{flex-wrap:wrap;height:auto;padding:12px 28px;gap:8px 20px}.gl .nav ul{order:3;width:100%;overflow-x:auto;white-space:nowrap;gap:22px;scrollbar-width:none;padding-bottom:2px}.gl .nav ul::-webkit-scrollbar{display:none}}
+@media(max-width:980px){
+  .gl section{padding:80px 0}
+  .gl .hero .wrap,.gl .about .wrap,.gl .show{grid-template-columns:1fr;gap:40px}
+  .gl .show:nth-child(even) .txt{order:0}
+  .gl .steps,.gl .stats .wrap,.gl .facts{grid-template-columns:1fr}
+  .gl .badge{left:-10px;width:104px;height:104px}.gl .badge b{font-size:32px}
+  .gl .ph{grid-template-rows:repeat(2,130px)}
+}
+@media(max-width:620px){.gl .wrap{padding:0 18px}.gl .masonry{columns:2 130px;column-gap:10px}.gl .masonry figure{margin-bottom:10px;border-radius:12px}.gl .rail{padding-left:18px}.gl .rail figure{flex-basis:250px}.gl .ph{grid-template-rows:repeat(2,110px)}}
+</style>
+
+<div class="gl" id="gl">
+
+<header class="nav"><div class="wrap">
+  <a class="logo gold" href="#gl-top">E. HOLLYWOODOVA</a>
+  <ul>
+    <li><a href="#gl-about">Обо мне</a></li><li><a href="#gl-how">Механика</a></li><li><a href="#gl-looks">Образы</a></li>
+    <li><a href="#gl-rev">Отзывы</a></li><li><a href="#gl-gal">Галерея</a></li><li><a href="#gl-clients">С кем работала</a></li><li><a href="#gl-contact">Контакты</a></li>
+  </ul>
+  <a class="btn fill" href="https://wa.me/79052258710?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%B0%D0%B7%D0%B4%D0%BD%D0%B8%D0%BA!" target="_blank" rel="noopener">Связаться со мной</a>
+</div></header>
+
+<section class="hero" id="gl-top"><div class="wrap">
+  <div>
+    <div class="eyebrow">Артист эстрадного жанра</div>
+    <h1><span class="gold">Елена</span><em class="gold">Голливудова</em></h1>
+    <div class="tag"><span>Ярко.</span><span>Душевно.</span><span>Легко.</span><span>Весело</span></div>
+    <p class="sub">Живу праздником уже 20 лет. Ведущая, актриса и «тётя Зина» — для вашего события любого формата.</p>
+    <div class="cta">
+      <a class="btn fill" href="#gl-contact">Связаться со мной</a>
+      <a class="btn line" href="#gl-looks">Смотреть образы</a>
+    </div>
+  </div>
+  <div class="arch">
+    <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">✦</span>
+    <div class="frame"><img src="https://static.tildacdn.info/tild3466-3434-4938-a538-383463613738/-/resize/1000x/photo_52627329499111.jpg" alt="Елена Голливудова"></div>
+    <div class="badge"><div><b>20</b>лет<br>праздника</div></div>
+  </div>
+</div></section>
+
+<div class="mq"><div>
+  <span>Ярко</span><i>✦</i><span>Душевно</span><i>✦</i><span>Легко</span><i>✦</i><span>Весело</span><i>✦</i>
+  <span>Ярко</span><i>✦</i><span>Душевно</span><i>✦</i><span>Легко</span><i>✦</i><span>Весело</span><i>✦</i>
+  <span>Ярко</span><i>✦</i><span>Душевно</span><i>✦</i><span>Легко</span><i>✦</i><span>Весело</span><i>✦</i>
+  <span>Ярко</span><i>✦</i><span>Душевно</span><i>✦</i><span>Легко</span><i>✦</i><span>Весело</span><i>✦</i>
+</div></div>
+
+<section class="about" id="gl-about"><div class="wrap">
+  <div class="rv">
+    <div class="eyebrow">Обо мне</div>
+    <h2 style="margin-top:16px">Живу <em class="gold">праздником</em> уже 20 лет</h2>
+    <p class="lead">У меня профессиональное образование и я знаю, о чём говорю: окончила театральное училище и стала дипломированным специалистом — <b>режиссёр театрализованных представлений и праздников (СПбГУКИ)</b>.</p>
+    <div class="tour">Гастролирую: <span>Москва</span><span>Сочи</span><span>Турция</span><span>Баку</span></div>
+  </div>
+  <ul class="svc rv">
+    <li><i>01</i>Ведущая на любой праздник</li>
+    <li><i>02</i>Актриса с театрализованной программой</li>
+    <li><i>03</i>Тематические розыгрыши и перфомансы</li>
+    <li><i>04</i>Экспресс-поздравления близким и друзьям</li>
+    <li><i>05</i>Устрою яркий welcome, где сделаем необычные фото для ваших соцсетей</li>
+    <li><i>06</i>Календарные праздники, мальчишники и девичники, свадьбы и корпоративы</li>
+  </ul>
+</div></section>
+
+<section class="stats"><div class="wrap">
+  <div class="stat rv"><b class="gold">15+</b><p>лет в сфере создания праздников</p></div>
+  <div class="stat rv"><b class="gold">1000+</b><p>реализованных проектов с оригинальной концепцией</p></div>
+  <div class="stat big rv"><b>Настоящее шоу</b><p>Незабываемые впечатления для каждого гостя от настоящих артистов на празднике любого формата</p></div>
+</div></section>
+
+<section class="how" id="gl-how"><div class="wrap">
+  <div class="hd rv">
+    <div><div class="eyebrow">Как это работает</div><h2 style="margin-top:14px">Механика <em class="gold">работы</em></h2></div>
+    <p>Индивидуальный подход к каждому событию. Написание индивидуального сценария, создание тематических образов и внешнего вида под каждый праздник.</p>
+  </div>
+  <div class="steps">
+    <div class="step rv"><div class="n gold">01</div><h3>Обсуждение деталей</h3>
+      <ul><li>обсуждение концепции</li><li>возможно написание сценария под заказ</li><li>приглашение DJ, аквагримёра и др. специалистов</li><li>обсуждение тайминга мероприятия</li></ul></div>
+    <div class="step rv"><div class="n gold">02</div><h3>Выбор образа</h3>
+      <ul><li>более 20 готовых образов</li><li>создание образа под ваш запрос</li><li>приглашение дополнительных артистов</li></ul></div>
+    <div class="step rv"><div class="n gold">03</div><h3>Встреча с заказчиком</h3>
+      <p>Если вы хотите обсудить сценарий или концепцию моего выхода, мы можем созвониться или встретиться лично.</p></div>
+    <div class="step rv"><div class="n gold">04</div><h3>Внесение предоплаты</h3>
+      <p>Для бронирования даты и времени.</p></div>
+    <div class="step rv"><div class="n gold">05</div><h3>Остаток оплаты</h3>
+      <p>После оплаты я буду рада услышать или прочитать отзыв.</p></div>
+    <div class="step rv"><div class="n gold">06</div><h3>Праздник!</h3>
+      <p>Веселимся до упаду или культурно проводим время в отличной компании!</p></div>
+  </div>
+</div></section>
+
+<section class="looks" id="gl-looks"><div class="wrap">
+  <div class="hd rv">
+    <div class="eyebrow">Образы</div>
+    <h2 style="margin-top:14px">Готовые <em class="gold">образы</em></h2>
+    <p>Не нашли своего? Создам образ под ваш запрос.</p>
+  </div>
+  <div class="chips rv" data-looks><span>Тётя Зина</span><span>Снегурочка</span><span>Морячка</span><span>Проводница</span><span>Итальянская Дона</span><span>Полицейская</span><span>Пионерка</span><span>Таролог-нумеролог</span><span>Буфетчица</span><span>Прапорщица</span><span>Стюардесса</span><span>Екатерина II</span><span>Солоха</span><span>Цыганка</span><span>Роза</span><span>Ясновидящая гадалка</span><span>Челночница из 90-х</span><span>Бородатая женщина</span><span>Викинг</span><span>Тамада</span><span>Стимпанк</span><span>Кассир</span><span>Ковбойша</span><span>Врач</span><span>Невеста</span><span>Крановщица</span><span>Рокерша</span><span>Ведьма</span><span>Русская красавица</span><span>Бабка-сплетница с лавки</span></div>
+  <div class="cta rv"><a class="btn fill" href="#gl-contact">Связаться со мной</a></div>
+</div></section>
+
+<section class="shows"><div class="wrap">
+  <div class="hd rv"><div class="eyebrow">Программы</div><h2 style="margin-top:14px">Какие образы чаще всего <em class="gold">выбирают?</em></h2></div>
+
+  <div class="show rv"><div class="txt">
+    <div class="eyebrow">Пионеры</div><h3>Пионерская <span class="gold">вечеринка</span></h3>
+    <div class="q">«Ни шагу назад, ни шагу на месте, а только вперёд, и только всем вместе!»</div>
+    <p>К танцам, песням и веселью будь готов — всегда готов!!! Если вы относите себя к числу незаурядных личностей, любите нестандартные решения и настоящее веселье — «Пионерская вечеринка» произведёт неизгладимое впечатление на гостей и надолго останется в вашей памяти.</p></div>
+    <div class="ph" data-show="pioneers"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3033-6534-4537-a366-393963323037/-/resize/700x/IMG_5657.JPG" data-full="https://static.tildacdn.info/tild3033-6534-4537-a366-393963323037/-/resize/1600x/IMG_5657.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3264-3636-4132-b162-333536323861/-/resize/700x/IMG_5660.JPG" data-full="https://static.tildacdn.info/tild3264-3636-4132-b162-333536323861/-/resize/1600x/IMG_5660.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3331-3463-4261-b832-643833373234/-/resize/700x/IMG_5658.JPG" data-full="https://static.tildacdn.info/tild3331-3463-4261-b832-643833373234/-/resize/1600x/IMG_5658.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3363-6366-4565-a439-626664373736/-/resize/700x/photo_52896730807356.jpg" data-full="https://static.tildacdn.info/tild3363-6366-4565-a439-626664373736/-/resize/1600x/photo_52896730807356.jpg"></div></div>
+
+  <div class="show rv"><div class="txt">
+    <div class="eyebrow">Фольклор</div><h3><span class="gold">Аля Русь</span></h3>
+    <p>Праздничная программа, которая обыграет популярные мотивы и клише русского фольклора. Ловко жонглирую скалкой и микрофоном, поём песни и танцуем под живой баян.</p></div>
+    <div class="ph" data-show="alyarus"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3134-3165-4331-b265-636162616133/-/resize/700x/5208791794215675604.jpg" data-full="https://static.tildacdn.info/tild3134-3165-4331-b265-636162616133/-/resize/1600x/5208791794215675604.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3263-6531-4133-a231-333838643839/-/resize/700x/IMG_5671.JPG" data-full="https://static.tildacdn.info/tild3263-6531-4133-a231-333838643839/-/resize/1600x/IMG_5671.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3265-3032-4264-a530-343032393537/-/resize/700x/IMG_5664.JPG" data-full="https://static.tildacdn.info/tild3265-3032-4264-a530-343032393537/-/resize/1600x/IMG_5664.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3664-3533-4136-b932-643730633338/-/resize/700x/5208791794215674606.jpg" data-full="https://static.tildacdn.info/tild3664-3533-4136-b932-643730633338/-/resize/1600x/5208791794215674606.jpg"></div></div>
+
+  <div class="show rv"><div class="txt">
+    <div class="eyebrow">Корпоратив</div><h3>Вечеринка в стиле <span class="gold">90-х</span></h3>
+    <p>Мероприятие, на котором можно погрузиться в атмосферу свободы, евродэнса и лосин, отдохнуть, вспомнить прошлые года и просто невероятно провести время. Тематические песни, танцы, конкурсы и другие части программы помогут словно на машине времени вернуться в 90-е.</p></div>
+    <div class="ph" data-show="nineties"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3162-3130-4233-a536-326332393965/-/resize/700x/photo_52896730807356.jpg" data-full="https://static.tildacdn.info/tild3162-3130-4233-a536-326332393965/-/resize/1600x/photo_52896730807356.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3230-6332-4365-b464-623666303739/-/resize/700x/IMG_5614.JPG" data-full="https://static.tildacdn.info/tild3230-6332-4365-b464-623666303739/-/resize/1600x/IMG_5614.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3266-6136-4734-b534-306262646333/-/resize/700x/IMG_5609.JPG" data-full="https://static.tildacdn.info/tild3266-6136-4734-b534-306262646333/-/resize/1600x/IMG_5609.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3965-3762-4061-a635-356336646134/-/resize/700x/IMG_5618.JPG" data-full="https://static.tildacdn.info/tild3965-3762-4061-a635-356336646134/-/resize/1600x/IMG_5618.JPG"></div></div>
+
+  <div class="show rv"><div class="txt">
+    <div class="eyebrow">Интерактив</div><h3>Тётя Зина — <span class="gold">тяжёлый люкс!</span></h3>
+    <p>Уникальный феномен: тётка из глубинки, которая есть у каждого человека и которую забыли пригласить, но она добралась! От души душевно поздравит и впишется в любой момент на любом мероприятии — естественно, с гостинцами и максимально «зашкварными» историями и конкурсами!</p></div>
+    <div class="ph" data-show="zina"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3265-3135-4138-a661-633262633065/-/resize/700x/IMG_5690.JPG" data-full="https://static.tildacdn.info/tild3265-3135-4138-a661-633262633065/-/resize/1600x/IMG_5690.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3661-3137-4938-a436-356337636333/-/resize/700x/IMG_5691.JPG" data-full="https://static.tildacdn.info/tild3661-3137-4938-a436-356337636333/-/resize/1600x/IMG_5691.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3937-6233-4236-a437-666332633034/-/resize/700x/IMG_5692.JPG" data-full="https://static.tildacdn.info/tild3937-6233-4236-a437-666332633034/-/resize/1600x/IMG_5692.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild6536-3331-4232-b636-316139356563/-/resize/700x/IMG_5689.JPG" data-full="https://static.tildacdn.info/tild6536-3331-4232-b636-316139356563/-/resize/1600x/IMG_5689.JPG"></div></div>
+
+  <div class="show rv"><div class="txt">
+    <div class="eyebrow">Юмор</div><h3>Потомственная <span class="gold">ведунья</span></h3>
+    <p>Интерактивная юмористическая программа, подходящая для любого события. Снимаю порчу, возвращаю денежный поток, соединяю судьбы, ставлю защиты на все 7 поколений.</p></div>
+    <div class="ph" data-show="veduna"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3530-3038-4638-b663-353834366363/-/resize/700x/5208791794215674458.jpg" data-full="https://static.tildacdn.info/tild3530-3038-4638-b663-353834366363/-/resize/1600x/5208791794215674458.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3539-3438-4363-b831-326132373239/-/resize/700x/5208791794215674246.jpg" data-full="https://static.tildacdn.info/tild3539-3438-4363-b831-326132373239/-/resize/1600x/5208791794215674246.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild6236-3031-4665-b162-626538363833/-/resize/700x/5208791794215675838.jpg" data-full="https://static.tildacdn.info/tild6236-3031-4665-b162-626538363833/-/resize/1600x/5208791794215675838.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild6337-6439-4361-a139-623061353639/-/resize/700x/5208791794215674585.jpg" data-full="https://static.tildacdn.info/tild6337-6439-4361-a139-623061353639/-/resize/1600x/5208791794215674585.jpg"></div></div>
+</div></section>
+
+<section class="clients" id="gl-clients"><div class="wrap">
+  <div class="rv"><div class="eyebrow">С кем я работала</div><h2 style="margin-top:14px">Меня <em class="gold">выбирают</em></h2></div>
+  <div class="chips rv" data-clients><span>Совкомбанк</span><span>Ginza Project</span><span>Руки Вверх</span><span>Парк «Диво Остров»</span><span>Клуб 154</span><span>Сеть ресторанов Unity</span><span>Небар</span><span>Stroganoff Group</span><span>Русская Рюмочная № 1</span><span>Santa Barbara</span><span>Театр оперы и балета</span><span>Летний дворец</span></div>
+  <div class="facts rv">
+    <div><b>Действующая артистка Event-театра</b>Гастролирую по городам и странам: Москва, Сочи, Турция, Баку</div>
+    <div><b>Постоянный резидент</b>Stroganoff Group и Русской Рюмочной № 1</div>
+    <div><b>Лучшие площадки Санкт-Петербурга</b>Ежегодно провожу мероприятия в Летнем дворце. Работала в Санкт-Петербургском государственном театре оперы и балета</div>
+  </div>
+</div></section>
+
+<section class="rev" id="gl-rev">
+  <div class="wrap"><div class="hd rv"><div class="eyebrow">Отзывы</div><h2 style="margin-top:14px">Что говорят <em class="gold">гости</em></h2></div></div>
+  <div class="rail" data-reviews><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3036-6132-4134-b630-313035333864/-/resize/600x/image-17.png" data-full="https://static.tildacdn.info/tild3036-6132-4134-b630-313035333864/image-17.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3161-3434-4164-b834-626663306666/-/resize/600x/image-15.png" data-full="https://static.tildacdn.info/tild3161-3434-4164-b834-626663306666/image-15.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3235-3935-4633-a662-396539343138/-/resize/600x/image-14.png" data-full="https://static.tildacdn.info/tild3235-3935-4633-a662-396539343138/image-14.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3236-3936-4230-b432-656230613536/-/resize/600x/image-7.png" data-full="https://static.tildacdn.info/tild3236-3936-4230-b432-656230613536/image-7.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3237-3230-4035-b438-306430336337/-/resize/600x/image-4.png" data-full="https://static.tildacdn.info/tild3237-3230-4035-b438-306430336337/image-4.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3265-6564-4738-a235-653163613130/-/resize/600x/image-13.png" data-full="https://static.tildacdn.info/tild3265-6564-4738-a235-653163613130/image-13.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3330-3131-4133-b764-386232376135/-/resize/600x/image-6.png" data-full="https://static.tildacdn.info/tild3330-3131-4133-b764-386232376135/image-6.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3335-6162-4837-b164-616562316466/-/resize/600x/image-8.png" data-full="https://static.tildacdn.info/tild3335-6162-4837-b164-616562316466/image-8.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3532-6630-4262-b830-306232383430/-/resize/600x/image-3.png" data-full="https://static.tildacdn.info/tild3532-6630-4262-b830-306232383430/image-3.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3639-3937-4365-a138-353665323934/-/resize/600x/image-9.png" data-full="https://static.tildacdn.info/tild3639-3937-4365-a138-353665323934/image-9.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3939-3431-4639-a365-343464616538/-/resize/600x/image-10.png" data-full="https://static.tildacdn.info/tild3939-3431-4639-a365-343464616538/image-10.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6164-3237-4139-b630-323864623465/-/resize/600x/image-16.png" data-full="https://static.tildacdn.info/tild6164-3237-4139-b630-323864623465/image-16.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6231-3531-4732-b762-313030646633/-/resize/600x/image-11.png" data-full="https://static.tildacdn.info/tild6231-3531-4732-b762-313030646633/image-11.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6435-6462-4534-b034-633431333762/-/resize/600x/image-12.png" data-full="https://static.tildacdn.info/tild6435-6462-4534-b034-633431333762/image-12.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6437-3330-4136-b163-353238613335/-/resize/600x/image.png" data-full="https://static.tildacdn.info/tild6437-3330-4136-b163-353238613335/image.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6564-3535-4033-a662-643662316230/-/resize/600x/image-2.png" data-full="https://static.tildacdn.info/tild6564-3535-4033-a662-643662316230/image-2.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6565-6661-4764-a638-316534313465/-/resize/600x/image-1.png" data-full="https://static.tildacdn.info/tild6565-6661-4764-a638-316534313465/image-1.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6664-6333-4436-a335-373035313230/-/resize/600x/image-5.png" data-full="https://static.tildacdn.info/tild6664-6333-4436-a335-373035313230/image-5.png"></figure></div>
+  <div class="hint">листайте →</div>
+</section>
+
+<section class="gal" id="gl-gal"><div class="wrap">
+  <div class="hd rv"><div><div class="eyebrow">Галерея</div><h2 style="margin-top:14px">Моменты, которые <em class="gold">блестят</em></h2></div><a class="btn line" href="#gl-contact">Хочу так же</a></div>
+  <div class="masonry" data-gallery><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3232-3435-4461-b830-356664386635/-/resize/700x/IMG_7958.JPG" data-full="https://static.tildacdn.info/tild3232-3435-4461-b830-356664386635/-/resize/1600x/IMG_7958.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3066-3161-4036-a266-306333376633/-/resize/700x/photo_52874916883208.jpg" data-full="https://static.tildacdn.info/tild3066-3161-4036-a266-306333376633/-/resize/1600x/photo_52874916883208.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3264-3938-4130-a534-366361333465/-/resize/700x/5208791794215675824.jpg" data-full="https://static.tildacdn.info/tild3264-3938-4130-a534-366361333465/-/resize/1600x/5208791794215675824.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3062-6466-4237-a263-633462393363/-/resize/700x/5208791794215675790.jpg" data-full="https://static.tildacdn.info/tild3062-6466-4237-a263-633462393363/-/resize/1600x/5208791794215675790.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3231-3539-4334-a437-653362366233/-/resize/700x/IMG_7770.JPG" data-full="https://static.tildacdn.info/tild3231-3539-4334-a437-653362366233/-/resize/1600x/IMG_7770.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3261-6437-4930-b263-326639653565/-/resize/700x/photo_53322630673644.jpg" data-full="https://static.tildacdn.info/tild3261-6437-4930-b263-326639653565/-/resize/1600x/photo_53322630673644.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3166-6163-4832-b833-643630616462/-/resize/700x/IMG_7827.JPG" data-full="https://static.tildacdn.info/tild3166-6163-4832-b833-643630616462/-/resize/1600x/IMG_7827.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3536-3135-4234-a335-383736666637/-/resize/700x/IMG_6095.JPG" data-full="https://static.tildacdn.info/tild3536-3135-4234-a335-383736666637/-/resize/1600x/IMG_6095.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3131-3964-4632-a163-666438656266/-/resize/700x/IMG_7857.JPG" data-full="https://static.tildacdn.info/tild3131-3964-4632-a163-666438656266/-/resize/1600x/IMG_7857.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3131-3265-4432-b234-643063306432/-/resize/700x/5208791794215675606.jpg" data-full="https://static.tildacdn.info/tild3131-3265-4432-b234-643063306432/-/resize/1600x/5208791794215675606.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3137-6561-4531-b739-323238363738/-/resize/700x/IMG_7777.JPG" data-full="https://static.tildacdn.info/tild3137-6561-4531-b739-323238363738/-/resize/1600x/IMG_7777.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3838-6239-4236-b565-623237373331/-/resize/700x/IMG_7903.JPG" data-full="https://static.tildacdn.info/tild3838-6239-4236-b565-623237373331/-/resize/1600x/IMG_7903.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3466-3730-4936-a163-343830373364/-/resize/700x/IMG_7928.JPG" data-full="https://static.tildacdn.info/tild3466-3730-4936-a163-343830373364/-/resize/1600x/IMG_7928.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3332-3730-4334-a137-616537396131/-/resize/700x/IMG_7779.JPG" data-full="https://static.tildacdn.info/tild3332-3730-4334-a137-616537396131/-/resize/1600x/IMG_7779.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3161-6635-4830-b738-636633323838/-/resize/700x/IMG_7824.JPG" data-full="https://static.tildacdn.info/tild3161-6635-4830-b738-636633323838/-/resize/1600x/IMG_7824.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3038-3034-4539-a666-313637653464/-/resize/700x/IMG_7818.JPG" data-full="https://static.tildacdn.info/tild3038-3034-4539-a666-313637653464/-/resize/1600x/IMG_7818.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3430-3137-4836-a161-633532663031/-/resize/700x/IMG_7786.JPG" data-full="https://static.tildacdn.info/tild3430-3137-4836-a161-633532663031/-/resize/1600x/IMG_7786.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3035-6635-4439-b666-316333306536/-/resize/700x/IMG_7880.JPG" data-full="https://static.tildacdn.info/tild3035-6635-4439-b666-316333306536/-/resize/1600x/IMG_7880.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3037-3935-4331-a235-336236386662/-/resize/700x/IMG_7867.JPG" data-full="https://static.tildacdn.info/tild3037-3935-4331-a235-336236386662/-/resize/1600x/IMG_7867.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3736-6432-4666-a136-623034616566/-/resize/700x/IMG_7883.JPG" data-full="https://static.tildacdn.info/tild3736-6432-4666-a136-623034616566/-/resize/1600x/IMG_7883.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3339-6261-4132-b539-613133653965/-/resize/700x/IMG_7814.JPG" data-full="https://static.tildacdn.info/tild3339-6261-4132-b539-613133653965/-/resize/1600x/IMG_7814.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3130-3539-4133-b038-366161626161/-/resize/700x/IMG_7877.JPG" data-full="https://static.tildacdn.info/tild3130-3539-4133-b038-366161626161/-/resize/1600x/IMG_7877.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3362-3430-4434-b134-333637633831/-/resize/700x/IMG_7806.JPG" data-full="https://static.tildacdn.info/tild3362-3430-4434-b134-333637633831/-/resize/1600x/IMG_7806.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3636-3034-4638-b863-396336656266/-/resize/700x/IMG_7902.JPG" data-full="https://static.tildacdn.info/tild3636-3034-4638-b863-396336656266/-/resize/1600x/IMG_7902.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3231-3331-4132-b561-326238643539/-/resize/700x/IMG_7870.JPG" data-full="https://static.tildacdn.info/tild3231-3331-4132-b561-326238643539/-/resize/1600x/IMG_7870.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3234-3530-4737-a361-343862353536/-/resize/700x/IMG_7908.JPG" data-full="https://static.tildacdn.info/tild3234-3530-4737-a361-343862353536/-/resize/1600x/IMG_7908.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3332-6662-4530-b938-626664643337/-/resize/700x/5208791794215676191.jpg" data-full="https://static.tildacdn.info/tild3332-6662-4530-b938-626664643337/-/resize/1600x/5208791794215676191.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3238-3133-4132-b731-656664383763/-/resize/700x/IMG_7950.JPG" data-full="https://static.tildacdn.info/tild3238-3133-4132-b731-656664383763/-/resize/1600x/IMG_7950.JPG"></figure></div>
+</div></section>
+
+<section class="why"><div class="wrap">
+  <div class="eyebrow">Почему я?</div>
+  <div class="num gold rv">1000<small>проведённых мероприятий</small></div>
+  <p class="t rv">Лично придуманных и реализованных проектов. Грамотная речь, презентабельная внешность, лёгкость и непринуждённость в ведении, а главное — невероятное обаяние!</p>
+</div></section>
+
+<section class="contact" id="gl-contact"><div class="wrap">
+  <div class="eyebrow">Контакты</div>
+  <h2 class="rv">Сделайте вашу жизнь <em class="gold">ярче</em>, обратившись ко мне</h2>
+  <div class="links rv">
+    <a class="btn fill" href="https://wa.me/79052258710?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%B0%D0%B7%D0%B4%D0%BD%D0%B8%D0%BA!" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn fill" href="https://t.me/Hollywoodovna" target="_blank" rel="noopener">Telegram</a>
+    <a class="btn line" href="https://www.instagram.com/elena_hollywoodova" target="_blank" rel="noopener">Instagram*</a>
+  </div>
+  <p class="tel">Телефон: <a href="tel:+79052258710">+7 905 225-87-10</a> · @ELENA__HOLLYWOODOVA</p>
+  <p class="note">*Instagram признан экстремистской организацией и запрещён на территории РФ</p>
+</div></section>
+
+</div>
+
+<script>
+/* Только украшения: плавное появление блоков и увеличение фото по клику.
+   Фото и тексты лежат прямо в HTML выше — без этого скрипта страница тоже полностью работает. */
+var EH = {
+  mount: function (root) {
+    var list = function (sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); };
+    var items = list('.rv');
+    if ('IntersectionObserver' in window) {
+      root.classList.add('eh-js');
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      items.forEach(function (n) { io.observe(n); });
+    }
+    // шапка уезжает вверх при прокрутке вниз и возвращается при прокрутке вверх
+    var nav = root.querySelector('.nav');
+    if (nav) {
+      var lastY = window.pageYOffset || 0, hidden = false, busy = false;
+      nav.style.transition = (nav.style.transition ? nav.style.transition + ',' : '') + 'transform .4s ease';
+      var setHidden = function (h) {
+        if (h === hidden) return;
+        hidden = h;
+        nav.style.transform = h ? 'translateY(-110%)' : '';
+      };
+      window.addEventListener('scroll', function () {
+        if (busy) return;
+        busy = true;
+        (window.requestAnimationFrame || setTimeout)(function () {
+          var y = window.pageYOffset || 0, d = y - lastY;
+          if (y < 80) setHidden(false);
+          else if (d > 8) setHidden(true);
+          else if (d < -8) setHidden(false);
+          if (Math.abs(d) > 8 || y < 80) lastY = y;
+          busy = false;
+        });
+      }, { passive: true });
+      root.addEventListener('focusin', function (e) { if (nav.contains(e.target)) setHidden(false); });
+    }
+    var box = document.createElement('div');
+    box.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out';
+    var im = document.createElement('img');
+    im.style.cssText = 'max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 20px 80px rgba(0,0,0,.6)';
+    box.appendChild(im);
+    box.onclick = function () { box.style.display = 'none'; };
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') box.style.display = 'none'; });
+    document.body.appendChild(box);
+    root.addEventListener('click', function (e) {
+      var t = e.target;
+      if (t.tagName === 'IMG' && t.getAttribute('data-full')) {
+        im.src = t.getAttribute('data-full');
+        box.style.display = 'flex';
+      }
+    });
+  }
+};
+
+(function(){ var r=document.getElementById('gl'); if(r) EH.mount(r); })();
+</script>
+</body></html>
