@@ -1,0 +1,558 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Елена Голливудова — вариант-5-кино</title><style>html,body{margin:0;padding:0}</style></head><body><!-- ВАРИАНТ 5 · КИНО · вставить целиком в блок T123 (HTML) в Tilda -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+.cx{--ink:#0b0a09;--ink2:#141210;--ink3:#1d1a17;--ivory:#efe9dc;--mute:#9a9183;--gold:#c8a96b;--gold-d:#8e7448;--line:rgba(239,233,220,.16);
+  background:var(--ink);color:var(--ivory);font-family:'Manrope',sans-serif;font-weight:300;font-size:17px;line-height:1.75;overflow-x:clip;position:relative;-webkit-font-smoothing:antialiased}
+.cx *{box-sizing:border-box;margin:0;padding:0}
+.cx a{color:inherit;text-decoration:none}
+.cx img{display:block;max-width:100%}
+.cx .wrap{max-width:1360px;margin:0 auto;padding:0 48px}
+.cx section{position:relative}
+.cx .serif{font-family:'Cormorant Garamond',Georgia,serif}
+.cx .eyebrow{display:inline-flex;align-items:center;gap:16px;font-size:11px;letter-spacing:.34em;text-transform:uppercase;font-weight:500;color:var(--gold)}
+.cx .eyebrow::before{content:"";width:40px;height:1px;background:var(--gold)}
+.cx h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(46px,7vw,112px);line-height:.95;letter-spacing:-.015em}
+.cx h2 em{font-style:italic;color:var(--gold)}
+/* film grain + vignette */
+.cx::after{content:"";position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+
+/* buttons */
+.cx .btn{display:inline-flex;align-items:center;gap:16px;padding:19px 38px;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;font-weight:500;background:var(--ivory);color:var(--ink);border:1px solid var(--ivory);transition:.4s;cursor:pointer;white-space:nowrap;position:relative;overflow:hidden}
+.cx .btn:hover{background:transparent;color:var(--ivory)}
+.cx .btn.line{background:transparent;color:var(--ivory);border-color:var(--line)}
+.cx .btn.line:hover{border-color:var(--gold);color:var(--gold)}
+.cx .tl-link{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;font-weight:500;padding-bottom:7px;border-bottom:1px solid var(--gold);transition:.3s;white-space:nowrap}
+.cx .tl-link:hover{color:var(--gold)}
+
+/* nav */
+.cx .nav{position:fixed;top:0;left:0;right:0;z-index:70;transition:background .5s,backdrop-filter .5s,transform .5s}
+.cx .nav.sc{background:rgba(11,10,9,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.cx .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
+.cx .logo{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;letter-spacing:.04em;white-space:nowrap}
+.cx .logo i{color:var(--gold)}
+.cx .nav ul{display:flex;gap:28px;list-style:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;white-space:nowrap}
+.cx .nav ul a{padding:6px 0;border-bottom:1px solid transparent;transition:.3s}
+.cx .nav ul a:hover{color:var(--gold);border-color:var(--gold)}
+
+/* hero */
+.cx .hero{min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;padding:130px 0 56px}
+.cx .hero .bg{position:absolute;top:0;right:0;bottom:0;width:56%}
+.cx .hero .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 16%;filter:saturate(.92) contrast(1.05)}
+.cx .hero .bg::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--ink) 0%,rgba(11,10,9,.55) 22%,rgba(11,10,9,0) 52%),linear-gradient(0deg,var(--ink) 0%,rgba(11,10,9,0) 38%)}
+.cx .hero .wrap{position:relative;z-index:3;width:100%}
+.cx .hero .meta{position:absolute;top:-440px;left:48px;display:none}
+.cx .hero h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(70px,12.6vw,214px);line-height:.82;letter-spacing:-.03em;margin:26px 0 54px;mix-blend-mode:difference;color:#efe9dc}
+.cx .hero h1 span{display:block}
+.cx .hero h1 .i{font-style:italic;font-weight:300;padding-left:1.1em}
+.cx .hero .row{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;border-top:1px solid var(--line);padding-top:34px}
+.cx .hero .words{display:flex;flex-wrap:wrap;gap:6px 0;font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;font-weight:500;margin-bottom:22px}
+.cx .hero .words span{padding:0 22px;border-left:1px solid var(--line)}
+.cx .hero .words span:first-child{padding-left:0;border:0}
+.cx .hero .sub{max-width:520px;color:var(--mute)}
+.cx .hero .cta{display:flex;align-items:center;gap:34px;flex-wrap:wrap;justify-content:flex-end}
+.cx .scrollcue{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:4;font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--mute);display:flex;flex-direction:column;align-items:center;gap:10px}
+.cx .scrollcue::after{content:"";width:1px;height:40px;background:linear-gradient(var(--gold),transparent);animation:cxcue 2.4s ease-in-out infinite;transform-origin:top}
+@keyframes cxcue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* statement */
+.cx .statement{padding:190px 0 150px}
+.cx .statement .eyebrow{margin-bottom:46px}
+.cx .statement .big{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,4.9vw,76px);line-height:1.12;letter-spacing:-.01em;max-width:1180px}
+.cx .statement .big em{font-style:italic;color:var(--gold)}
+.cx .statement .big .w{display:inline-block;margin-right:.26em;opacity:.18;transition:opacity .5s ease}
+.cx .statement .big .w.on{opacity:1}
+.cx .statement .tour{margin-top:70px;display:flex;flex-wrap:wrap;gap:8px 30px;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);align-items:center}
+.cx .statement .tour b{font-weight:500;color:var(--ivory)}
+
+/* services */
+.cx .svc{border-top:1px solid var(--line);list-style:none}
+.cx .svc li{display:grid;grid-template-columns:90px 1fr 60px;align-items:center;gap:20px;padding:34px 0;border-bottom:1px solid var(--line);font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,62px);line-height:1.05;font-weight:300;position:relative;transition:padding .5s ease,color .4s;cursor:default}
+.cx .svc li i{font-family:'Manrope',sans-serif;font-style:normal;font-size:11.5px;letter-spacing:.24em;color:var(--gold);font-weight:500}
+.cx .svc li::after{content:"→";font-family:'Manrope',sans-serif;font-size:22px;color:var(--gold);opacity:0;transform:translateX(-14px);transition:.5s;justify-self:end}
+.cx .svc li:hover{padding-left:28px;color:var(--gold)}
+.cx .svc li:hover::after{opacity:1;transform:none}
+
+/* stats */
+.cx .stats{padding:150px 0}
+.cx .stats .wrap{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:0}
+.cx .stat{padding:20px 44px 20px 0;border-right:1px solid var(--line)}
+.cx .stat + .stat{padding-left:44px}
+.cx .stat:last-child{border:0}
+.cx .stat b{display:block;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(90px,13vw,210px);line-height:.85;letter-spacing:-.03em;color:var(--ivory)}
+.cx .stat b sup{font-size:.38em;color:var(--gold);vertical-align:top;position:relative;top:.2em;margin-left:.04em}
+.cx .stat p{margin-top:26px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);max-width:270px;line-height:1.8}
+.cx .stat.t b{font-style:italic;font-size:clamp(46px,5.4vw,86px);line-height:.98;letter-spacing:-.02em}
+.cx .stat.t p{text-transform:none;letter-spacing:0;font-size:16px;max-width:380px}
+
+/* programs: sticky stack */
+.cx .prog{padding:60px 0 160px}
+.cx .prog .hd{padding:90px 0 80px;max-width:900px}
+.cx .prog .hd h2{margin-top:26px}
+.cx .pcard{position:sticky;top:96px;margin-bottom:60px;min-height:640px;display:grid;grid-template-columns:5fr 7fr;border:1px solid var(--line);background:var(--ink2);overflow:hidden}
+.cx .pcard:nth-of-type(1){top:96px;background:#13110f}
+.cx .pcard:nth-of-type(2){top:116px;background:#171411}
+.cx .pcard:nth-of-type(3){top:136px;background:#1b1713}
+.cx .pcard:nth-of-type(4){top:156px;background:#1f1a15}
+.cx .pcard:nth-of-type(5){top:176px;background:#241e17;margin-bottom:0}
+.cx .pcard .txt{padding:60px 56px;display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+.cx .pcard .no{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--gold)}
+.cx .pcard .no span{display:inline-block;font-family:'Manrope',sans-serif;font-style:normal;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute);margin-left:16px}
+.cx .pcard h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,4.6vw,76px);line-height:.96;letter-spacing:-.015em;margin:20px 0 26px}
+.cx .pcard h3 em{font-style:italic;color:var(--gold)}
+.cx .pcard .q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;line-height:1.35;margin-bottom:16px}
+.cx .pcard p{color:var(--mute);max-width:460px;font-size:16px}
+.cx .pcard .ph{position:relative;display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:1fr 1fr;gap:3px;background:var(--ink)}
+.cx .pcard .ph img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:transform 1.1s ease,filter .6s;filter:saturate(.88) contrast(1.05)}
+.cx .pcard .ph img:hover{transform:scale(1.04);filter:saturate(1) contrast(1.05)}
+.cx .pcard .ph img:nth-child(1){grid-row:span 2}
+.cx .pcard .ph img:nth-child(4){display:none}
+.cx .pcard .ph::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 80px rgba(0,0,0,.35)}
+
+/* looks marquee */
+.cx .looks{padding:150px 0;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cx .looks .hd{margin-bottom:80px}
+.cx .looks .hd h2{margin-top:26px}
+.cx .looks .hd p{margin-top:24px;color:var(--mute)}
+.cx .lrow{display:flex;gap:0;white-space:nowrap;width:max-content;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(54px,8.4vw,140px);line-height:1.15;letter-spacing:-.01em}
+.cx .lrow .trk{display:flex;flex-wrap:nowrap}
+.cx .lrow span{padding:0 .32em;color:transparent;-webkit-text-stroke:1px rgba(239,233,220,.55);transition:.4s;cursor:default;position:relative}
+.cx .lrow span::after{content:"✦";position:absolute;right:-.2em;top:50%;transform:translateY(-52%);font-size:.22em;color:var(--gold);-webkit-text-stroke:0}
+.cx .lrow span:hover{color:var(--ivory);-webkit-text-stroke:1px var(--ivory);font-style:italic}
+.cx .lrow.b span{-webkit-text-stroke:1px rgba(200,169,107,.6)}
+.cx .lrow.b span:hover{color:var(--gold);-webkit-text-stroke:1px var(--gold)}
+.cx .lrow.a{animation:cxl 70s linear infinite}
+.cx .lrow.b{animation:cxl 85s linear infinite reverse;margin-top:6px}
+@keyframes cxl{to{transform:translateX(-50%)}}
+.cx .lwrap:hover .lrow{animation-play-state:paused}
+.cx .lwrap{overflow:hidden}
+/* без скрипта дорожки просто переносятся */
+.cx:not(.eh-js) .lwrap .lrow{width:auto;white-space:normal;flex-wrap:wrap;justify-content:center;animation:none;transform:none;font-size:clamp(30px,4vw,56px)}
+.cx:not(.eh-js) .lwrap .lrow .trk{flex-wrap:wrap;justify-content:center}
+.cx:not(.eh-js) .lwrap .lrow.b{display:none}
+.cx .looks .cta{text-align:center;margin-top:90px}
+
+/* how: timeline */
+.cx .how{padding:170px 0}
+.cx .how .hd{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:110px}
+.cx .how .hd h2{margin-top:26px}
+.cx .how .hd p{color:var(--mute);max-width:430px;justify-self:end}
+.cx .tl{position:relative;max-width:1100px;margin:0 auto}
+.cx .tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line);transform:translateX(-.5px)}
+.cx .tl .fill{position:absolute;left:50%;top:0;width:1px;height:0;background:var(--gold);transform:translateX(-.5px);transition:height .15s linear}
+.cx .st{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:90px}
+.cx .st:last-child{margin-bottom:0}
+.cx .st .b{padding:0 70px 0 0;text-align:right}
+.cx .st:nth-child(even) .b{grid-column:2;padding:0 0 0 70px;text-align:left}
+.cx .st::before{content:"";position:absolute;left:50%;top:14px;width:11px;height:11px;border-radius:50%;background:var(--ink);border:1px solid var(--gold-d);transform:translateX(-50%);transition:.5s;z-index:2}
+.cx .st.on::before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 8px rgba(200,169,107,.15)}
+.cx .st .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--gold)}
+.cx .st h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,3.6vw,52px);line-height:1;margin:8px 0 18px}
+.cx .st p,.cx .st li{color:var(--mute);font-size:16px;line-height:1.7}
+.cx .st ul{list-style:none}
+.cx .st .b{opacity:1}
+
+/* clients */
+.cx .clients{padding:150px 0;background:var(--ink2)}
+.cx .clients .hd{margin-bottom:80px}
+.cx .clients .hd h2{margin-top:26px}
+.cx .cl{display:flex;flex-wrap:wrap;gap:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.4vw,68px);line-height:1.3;letter-spacing:-.01em}
+.cx .cl span{padding-right:.2em;transition:.4s;cursor:default}
+.cx .cl span::after{content:"/";color:var(--gold-d);margin-left:.28em;font-weight:300}
+.cx .cl span:last-child::after{content:""}
+.cx .cl span:hover{color:var(--gold);font-style:italic}
+.cx .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:60px;margin-top:100px;padding-top:50px;border-top:1px solid var(--line)}
+.cx .facts div{color:var(--mute);font-size:15.5px;line-height:1.75}
+.cx .facts b{display:block;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-height:1.15;color:var(--ivory);margin-bottom:12px}
+
+/* reviews */
+.cx .rev{padding:150px 0 130px}
+.cx .rev .hd{margin-bottom:70px}
+.cx .rev .hd h2{margin-top:26px}
+.cx .rail{display:flex;gap:24px;overflow-x:auto;padding:6px max(48px,calc((100vw - 1360px)/2 + 48px)) 40px;scroll-snap-type:x proximity;scrollbar-width:none;cursor:grab}
+.cx .rail::-webkit-scrollbar{display:none}
+.cx .rail.drag{cursor:grabbing;scroll-snap-type:none}
+.cx .rail figure{flex:0 0 280px;min-height:170px;background:#fff;border-radius:4px;padding:5px;scroll-snap-align:start;opacity:.94;transition:.4s}
+.cx .rail figure:hover{opacity:1;transform:translateY(-6px)}
+.cx .rail img{width:100%;border-radius:2px;user-select:none;-webkit-user-drag:none}
+.cx .hint{margin-top:26px;text-align:center;font-size:10.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--mute)}
+
+/* gallery */
+.cx .gal{padding:150px 0;border-top:1px solid var(--line)}
+.cx .gal .hd{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:90px}
+.cx .gal .hd h2{margin-top:26px}
+.cx .mos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+.cx .mos figure{overflow:hidden;aspect-ratio:3/4;background:var(--ink3);will-change:transform}
+.cx .mos figure:nth-child(3n+2){margin-top:90px}
+.cx .mos figure:nth-child(n+10){display:none}
+.cx .mos img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:transform 1.2s ease,filter .6s;filter:saturate(.88) contrast(1.05)}
+.cx .mos figure:hover img{transform:scale(1.05);filter:saturate(1) contrast(1.05)}
+
+/* why */
+.cx .why{padding:170px 0;text-align:center;overflow:hidden;background:var(--ink2)}
+.cx .why .num{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(150px,34vw,520px);line-height:.8;color:transparent;-webkit-text-stroke:1px var(--gold);letter-spacing:-.04em;margin:36px 0 10px}
+.cx .why h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;font-size:clamp(30px,4vw,56px);line-height:1.1;margin-bottom:28px}
+.cx .why p{max-width:640px;margin:0 auto;color:var(--mute)}
+
+/* contact */
+.cx .contact{padding:190px 0 70px;text-align:center}
+.cx .contact h2{font-size:clamp(54px,9.4vw,160px);line-height:.92;max-width:1200px;margin:34px auto 70px}
+.cx .links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.cx .tel{margin-top:54px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.cx .tel a{color:var(--ivory);border-bottom:1px solid var(--gold);padding-bottom:4px}
+.cx .note{margin-top:130px;font-size:11.5px;color:#5e574c;letter-spacing:.03em}
+
+/* cursor */
+.cx-cur{position:fixed;left:0;top:0;width:12px;height:12px;border-radius:50%;border:1px solid var(--gold,#c8a96b);z-index:99998;pointer-events:none;transform:translate(-50%,-50%);transition:width .35s,height .35s,background .35s,opacity .3s;opacity:0;mix-blend-mode:normal}
+.cx-cur.on{opacity:1}
+.cx-cur.big{width:64px;height:64px;background:rgba(200,169,107,.14)}
+
+/* reveal */
+.cx.eh-js .rv{opacity:0;transform:translateY(34px);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.cx.eh-js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .cx.eh-js .rv{transition:none;opacity:1;transform:none}.cx .lrow{animation:none!important}.cx *{transition:none!important}.cx .statement .big .w{opacity:1}
+}
+
+@media(max-width:1180px){.cx .nav ul{display:none}}
+@media(max-width:980px){
+  .cx .wrap{padding:0 24px}
+  .cx .nav .wrap{height:68px}
+  .cx .hero{padding:110px 0 46px;min-height:0}
+  .cx .hero .bg{position:relative;width:100%;height:78vw;min-height:420px;max-height:640px;margin:-110px 0 0}
+  .cx .hero{display:block;padding-top:0}
+  .cx .hero .bg::before{background:linear-gradient(0deg,var(--ink) 0%,rgba(11,10,9,0) 50%)}
+  .cx .hero .wrap{margin-top:-90px}
+  .cx .hero h1{font-size:clamp(60px,17vw,150px);margin-bottom:34px}
+  .cx .hero h1 .i{padding-left:.4em}
+  .cx .hero .row{grid-template-columns:1fr}
+  .cx .hero .cta{justify-content:flex-start}
+  .cx .scrollcue{display:none}
+  .cx .statement{padding:110px 0 90px}
+  .cx .svc li{grid-template-columns:44px 1fr;padding:26px 0}.cx .svc li::after{display:none}
+  .cx .stats{padding:100px 0}.cx .stats .wrap{grid-template-columns:1fr}
+  .cx .stat,.cx .stat + .stat{padding:34px 0;border-right:0;border-bottom:1px solid var(--line)}.cx .stat:last-child{border:0}
+  .cx .pcard{position:relative!important;top:auto!important;grid-template-columns:1fr;min-height:0;margin-bottom:30px!important}
+  .cx .pcard .txt{padding:36px 26px}
+  .cx .pcard .ph{grid-template-rows:200px 200px;min-height:400px}
+  .cx .how{padding:110px 0}.cx .how .hd{grid-template-columns:1fr;gap:30px;margin-bottom:70px}.cx .how .hd p{justify-self:start}
+  .cx .tl::before,.cx .tl .fill{left:7px}
+  .cx .st{grid-template-columns:1fr;margin-bottom:60px}
+  .cx .st::before{left:7px}
+  .cx .st .b,.cx .st:nth-child(even) .b{grid-column:1;padding:0 0 0 40px;text-align:left}
+  .cx .clients,.cx .looks,.cx .rev,.cx .gal,.cx .why{padding:100px 0}
+  .cx .facts{grid-template-columns:1fr;gap:40px}
+  .cx .mos{grid-template-columns:1fr 1fr;gap:12px}.cx .mos figure:nth-child(3n+2){margin-top:0}.cx .mos figure:nth-child(even){margin-top:40px}
+  .cx .rail{padding-left:24px}
+  .cx .contact{padding:120px 0 50px}
+}
+@media(max-width:620px){
+  .cx{font-size:16px}
+  .cx .btn{padding:17px 26px;white-space:normal;text-align:center}
+  .cx .nav .tl-link{display:none}
+  .cx .rail figure{flex-basis:240px}
+}
+@media(hover:none),(pointer:coarse){.cx-cur{display:none}}
+</style>
+
+<div class="cx" id="cx">
+
+<header class="nav" id="cx-nav"><div class="wrap">
+  <a class="logo" href="#cx-top">Елена <i>Голливудова</i></a>
+  <ul>
+    <li><a href="#cx-about">Обо мне</a></li><li><a href="#cx-how">Механика</a></li><li><a href="#cx-looks">Образы</a></li>
+    <li><a href="#cx-rev">Отзывы</a></li><li><a href="#cx-gal">Галерея</a></li><li><a href="#cx-clients">С кем работала</a></li><li><a href="#cx-contact">Контакты</a></li>
+  </ul>
+  <a class="tl-link" href="#cx-contact">Связаться со мной</a>
+</div></header>
+
+<section class="hero" id="cx-top">
+  <div class="bg"><img src="https://static.tildacdn.info/tild3466-3434-4938-a538-383463613738/-/resize/1000x/photo_52627329499111.jpg" alt="Елена Голливудова"></div>
+  <div class="wrap">
+    <div class="eyebrow">Артист эстрадного жанра</div>
+    <h1><span>Елена</span><span class="i">Голливудова</span></h1>
+    <div class="row">
+      <div>
+        <div class="words"><span>Ярко</span><span>Душевно</span><span>Легко</span><span>Весело</span></div>
+        <p class="sub">Живу праздником уже 20 лет. Ведущая, актриса и режиссёр праздников для событий любого формата.</p>
+      </div>
+      <div class="cta"><a class="btn" href="#cx-contact">Связаться со мной</a><a class="tl-link" href="#cx-looks">Смотреть образы</a></div>
+    </div>
+  </div>
+  <div class="scrollcue">Листайте</div>
+</section>
+
+<section class="statement" id="cx-about"><div class="wrap">
+  <div class="eyebrow">Обо мне</div>
+  <p class="big" id="cx-big">Живу <em>праздником</em> уже 20 лет. У меня профессиональное образование, и я знаю, о чём говорю: окончила театральное училище и стала дипломированным специалистом — режиссёр театрализованных представлений и праздников (СПбГУКИ).</p>
+  <div class="tour">Гастролирую <b>Москва</b><b>Сочи</b><b>Турция</b><b>Баку</b></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <ul class="svc">
+    <li class="rv"><i>01</i>Ведущая на любой праздник</li>
+    <li class="rv"><i>02</i>Актриса с театрализованной программой</li>
+    <li class="rv"><i>03</i>Тематические розыгрыши и перфомансы</li>
+    <li class="rv"><i>04</i>Экспресс-поздравления близким и друзьям</li>
+    <li class="rv"><i>05</i>Яркий welcome, где сделаем необычные фото для ваших соцсетей</li>
+    <li class="rv"><i>06</i>Календарные праздники, мальчишники и девичники, свадьбы и корпоративы</li>
+  </ul>
+</div></section>
+
+<section class="stats"><div class="wrap">
+  <div class="stat rv"><b><span data-count="15">15</span><sup>+</sup></b><p>лет в сфере создания праздников</p></div>
+  <div class="stat rv"><b><span data-count="1000">1000</span><sup>+</sup></b><p>реализованных проектов с оригинальной концепцией</p></div>
+  <div class="stat t rv"><b>Настоящее шоу</b><p>Незабываемые впечатления для каждого гостя от настоящих артистов на празднике любого формата.</p></div>
+</div></section>
+
+<section class="prog"><div class="wrap">
+  <div class="hd rv"><div class="eyebrow">Программы</div><h2>Какие образы чаще всего <em>выбирают?</em></h2></div>
+
+  <article class="pcard"><div class="txt"><div><div class="no">№ 1<span>Пионеры</span></div><h3>Пионерская <em>вечеринка</em></h3>
+    <div class="q">«Ни шагу назад, ни шагу на месте, а только вперёд, и только всем вместе!»</div>
+    <p>К танцам, песням и веселью будь готов — всегда готов! Если вы относите себя к числу незаурядных личностей, любите нестандартные решения и настоящее веселье — «Пионерская вечеринка» произведёт неизгладимое впечатление на гостей и надолго останется в вашей памяти.</p></div></div>
+    <div class="ph" data-show="pioneers"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3033-6534-4537-a366-393963323037/-/resize/700x/IMG_5657.JPG" data-full="https://static.tildacdn.info/tild3033-6534-4537-a366-393963323037/-/resize/1600x/IMG_5657.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3264-3636-4132-b162-333536323861/-/resize/700x/IMG_5660.JPG" data-full="https://static.tildacdn.info/tild3264-3636-4132-b162-333536323861/-/resize/1600x/IMG_5660.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3331-3463-4261-b832-643833373234/-/resize/700x/IMG_5658.JPG" data-full="https://static.tildacdn.info/tild3331-3463-4261-b832-643833373234/-/resize/1600x/IMG_5658.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3363-6366-4565-a439-626664373736/-/resize/700x/photo_52896730807356.jpg" data-full="https://static.tildacdn.info/tild3363-6366-4565-a439-626664373736/-/resize/1600x/photo_52896730807356.jpg"></div></article>
+
+  <article class="pcard"><div class="txt"><div><div class="no">№ 2<span>Фольклор</span></div><h3><em>Аля</em> Русь</h3>
+    <p>Праздничная программа, которая обыграет популярные мотивы и клише русского фольклора. Ловко жонглирую скалкой и микрофоном, поём песни и танцуем под живой баян.</p></div></div>
+    <div class="ph" data-show="alyarus"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3134-3165-4331-b265-636162616133/-/resize/700x/5208791794215675604.jpg" data-full="https://static.tildacdn.info/tild3134-3165-4331-b265-636162616133/-/resize/1600x/5208791794215675604.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3263-6531-4133-a231-333838643839/-/resize/700x/IMG_5671.JPG" data-full="https://static.tildacdn.info/tild3263-6531-4133-a231-333838643839/-/resize/1600x/IMG_5671.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3265-3032-4264-a530-343032393537/-/resize/700x/IMG_5664.JPG" data-full="https://static.tildacdn.info/tild3265-3032-4264-a530-343032393537/-/resize/1600x/IMG_5664.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3664-3533-4136-b932-643730633338/-/resize/700x/5208791794215674606.jpg" data-full="https://static.tildacdn.info/tild3664-3533-4136-b932-643730633338/-/resize/1600x/5208791794215674606.jpg"></div></article>
+
+  <article class="pcard"><div class="txt"><div><div class="no">№ 3<span>Корпоратив</span></div><h3>Вечеринка в стиле <em>90-х</em></h3>
+    <p>Мероприятие, на котором можно погрузиться в атмосферу свободы, евродэнса и лосин, отдохнуть, вспомнить прошлые года и просто невероятно провести время. Тематические песни, танцы, конкурсы и другие части программы помогут словно на машине времени вернуться в 90-е.</p></div></div>
+    <div class="ph" data-show="nineties"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3162-3130-4233-a536-326332393965/-/resize/700x/photo_52896730807356.jpg" data-full="https://static.tildacdn.info/tild3162-3130-4233-a536-326332393965/-/resize/1600x/photo_52896730807356.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3230-6332-4365-b464-623666303739/-/resize/700x/IMG_5614.JPG" data-full="https://static.tildacdn.info/tild3230-6332-4365-b464-623666303739/-/resize/1600x/IMG_5614.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3266-6136-4734-b534-306262646333/-/resize/700x/IMG_5609.JPG" data-full="https://static.tildacdn.info/tild3266-6136-4734-b534-306262646333/-/resize/1600x/IMG_5609.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3965-3762-4061-a635-356336646134/-/resize/700x/IMG_5618.JPG" data-full="https://static.tildacdn.info/tild3965-3762-4061-a635-356336646134/-/resize/1600x/IMG_5618.JPG"></div></article>
+
+  <article class="pcard"><div class="txt"><div><div class="no">№ 4<span>Интерактив</span></div><h3>Тётя Зина — <em>тяжёлый люкс</em></h3>
+    <p>Уникальный феномен: тётка из глубинки, которая есть у каждого человека и которую забыли пригласить, но она добралась! От души душевно поздравит и впишется в любой момент на любом мероприятии — естественно, с гостинцами и максимально «зашкварными» историями и конкурсами!</p></div></div>
+    <div class="ph" data-show="zina"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3265-3135-4138-a661-633262633065/-/resize/700x/IMG_5690.JPG" data-full="https://static.tildacdn.info/tild3265-3135-4138-a661-633262633065/-/resize/1600x/IMG_5690.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3661-3137-4938-a436-356337636333/-/resize/700x/IMG_5691.JPG" data-full="https://static.tildacdn.info/tild3661-3137-4938-a436-356337636333/-/resize/1600x/IMG_5691.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3937-6233-4236-a437-666332633034/-/resize/700x/IMG_5692.JPG" data-full="https://static.tildacdn.info/tild3937-6233-4236-a437-666332633034/-/resize/1600x/IMG_5692.JPG"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild6536-3331-4232-b636-316139356563/-/resize/700x/IMG_5689.JPG" data-full="https://static.tildacdn.info/tild6536-3331-4232-b636-316139356563/-/resize/1600x/IMG_5689.JPG"></div></article>
+
+  <article class="pcard"><div class="txt"><div><div class="no">№ 5<span>Юмор</span></div><h3>Потомственная <em>ведунья</em></h3>
+    <p>Интерактивная юмористическая программа, подходящая для любого события. Снимаю порчу, возвращаю денежный поток, соединяю судьбы, ставлю защиты на все 7 поколений.</p></div></div>
+    <div class="ph" data-show="veduna"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3530-3038-4638-b663-353834366363/-/resize/700x/5208791794215674458.jpg" data-full="https://static.tildacdn.info/tild3530-3038-4638-b663-353834366363/-/resize/1600x/5208791794215674458.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild3539-3438-4363-b831-326132373239/-/resize/700x/5208791794215674246.jpg" data-full="https://static.tildacdn.info/tild3539-3438-4363-b831-326132373239/-/resize/1600x/5208791794215674246.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild6236-3031-4665-b162-626538363833/-/resize/700x/5208791794215675838.jpg" data-full="https://static.tildacdn.info/tild6236-3031-4665-b162-626538363833/-/resize/1600x/5208791794215675838.jpg"><img loading="lazy" alt="" src="https://static.tildacdn.info/tild6337-6439-4361-a139-623061353639/-/resize/700x/5208791794215674585.jpg" data-full="https://static.tildacdn.info/tild6337-6439-4361-a139-623061353639/-/resize/1600x/5208791794215674585.jpg"></div></article>
+</div></section>
+
+<section class="looks" id="cx-looks">
+  <div class="wrap"><div class="hd rv"><div class="eyebrow">Образы</div><h2>Готовые <em>образы</em></h2><p>Не нашли своего? Создам образ под ваш запрос.</p></div></div>
+  <div class="lwrap">
+    <div class="lrow a"><div class="trk" data-looks><span>Тётя Зина</span><span>Снегурочка</span><span>Морячка</span><span>Проводница</span><span>Итальянская Дона</span><span>Полицейская</span><span>Пионерка</span><span>Таролог-нумеролог</span><span>Буфетчица</span><span>Прапорщица</span><span>Стюардесса</span><span>Екатерина II</span><span>Солоха</span><span>Цыганка</span><span>Роза</span><span>Ясновидящая гадалка</span><span>Челночница из 90-х</span><span>Бородатая женщина</span><span>Викинг</span><span>Тамада</span><span>Стимпанк</span><span>Кассир</span><span>Ковбойша</span><span>Врач</span><span>Невеста</span><span>Крановщица</span><span>Рокерша</span><span>Ведьма</span><span>Русская красавица</span><span>Бабка-сплетница с лавки</span></div></div>
+    <div class="lrow b"><div class="trk" data-looks><span>Тётя Зина</span><span>Снегурочка</span><span>Морячка</span><span>Проводница</span><span>Итальянская Дона</span><span>Полицейская</span><span>Пионерка</span><span>Таролог-нумеролог</span><span>Буфетчица</span><span>Прапорщица</span><span>Стюардесса</span><span>Екатерина II</span><span>Солоха</span><span>Цыганка</span><span>Роза</span><span>Ясновидящая гадалка</span><span>Челночница из 90-х</span><span>Бородатая женщина</span><span>Викинг</span><span>Тамада</span><span>Стимпанк</span><span>Кассир</span><span>Ковбойша</span><span>Врач</span><span>Невеста</span><span>Крановщица</span><span>Рокерша</span><span>Ведьма</span><span>Русская красавица</span><span>Бабка-сплетница с лавки</span></div></div>
+  </div>
+  <div class="wrap"><div class="cta rv"><a class="btn" href="#cx-contact">Связаться со мной</a></div></div>
+</section>
+
+<section class="how" id="cx-how"><div class="wrap">
+  <div class="hd rv"><div><div class="eyebrow">Как это работает</div><h2>Механика <em>работы</em></h2></div>
+    <p>Индивидуальный подход к каждому событию: пишу индивидуальный сценарий и создаю тематические образы и внешний вид под каждый праздник.</p></div>
+  <div class="tl" id="cx-tl"><div class="fill" id="cx-fill"></div>
+    <div class="st"><div class="b rv"><div class="n">Шаг I</div><h3>Обсуждение деталей</h3><ul><li>обсуждение концепции</li><li>возможно написание сценария под заказ</li><li>приглашение DJ, аквагримёра и др. специалистов</li><li>обсуждение тайминга мероприятия</li></ul></div></div>
+    <div class="st"><div class="b rv"><div class="n">Шаг II</div><h3>Выбор образа</h3><ul><li>более 20 готовых образов</li><li>создание образа под ваш запрос</li><li>приглашение дополнительных артистов</li></ul></div></div>
+    <div class="st"><div class="b rv"><div class="n">Шаг III</div><h3>Встреча с заказчиком</h3><p>Если вы хотите обсудить сценарий или концепцию моего выхода, мы можем созвониться или встретиться лично.</p></div></div>
+    <div class="st"><div class="b rv"><div class="n">Шаг IV</div><h3>Внесение предоплаты</h3><p>Для бронирования даты и времени.</p></div></div>
+    <div class="st"><div class="b rv"><div class="n">Шаг V</div><h3>Остаток оплаты</h3><p>После оплаты я буду рада услышать или прочитать отзыв.</p></div></div>
+    <div class="st"><div class="b rv"><div class="n">Шаг VI</div><h3>Праздник</h3><p>Веселимся до упаду или культурно проводим время в отличной компании!</p></div></div>
+  </div>
+</div></section>
+
+<section class="clients" id="cx-clients"><div class="wrap">
+  <div class="hd rv"><div class="eyebrow">С кем я работала</div><h2>Меня <em>выбирают</em></h2></div>
+  <div class="cl rv" data-clients><span>Совкомбанк</span><span>Ginza Project</span><span>Руки Вверх</span><span>Парк «Диво Остров»</span><span>Клуб 154</span><span>Сеть ресторанов Unity</span><span>Небар</span><span>Stroganoff Group</span><span>Русская Рюмочная № 1</span><span>Santa Barbara</span><span>Театр оперы и балета</span><span>Летний дворец</span></div>
+  <div class="facts rv">
+    <div><b>Event-театр</b>Действующая артистка Event-театра. Гастролирую по городам и странам: Москва, Сочи, Турция, Баку.</div>
+    <div><b>Постоянный резидент</b>Stroganoff Group и Русской Рюмочной № 1.</div>
+    <div><b>Лучшие площадки Петербурга</b>Ежегодно провожу мероприятия в Летнем дворце. Работала в Санкт-Петербургском государственном театре оперы и балета.</div>
+  </div>
+</div></section>
+
+<section class="rev" id="cx-rev">
+  <div class="wrap"><div class="hd rv"><div class="eyebrow">Отзывы</div><h2>Что говорят <em>гости</em></h2></div></div>
+  <div class="rail" id="cx-rail" data-reviews><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3036-6132-4134-b630-313035333864/-/resize/600x/image-17.png" data-full="https://static.tildacdn.info/tild3036-6132-4134-b630-313035333864/image-17.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3161-3434-4164-b834-626663306666/-/resize/600x/image-15.png" data-full="https://static.tildacdn.info/tild3161-3434-4164-b834-626663306666/image-15.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3235-3935-4633-a662-396539343138/-/resize/600x/image-14.png" data-full="https://static.tildacdn.info/tild3235-3935-4633-a662-396539343138/image-14.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3236-3936-4230-b432-656230613536/-/resize/600x/image-7.png" data-full="https://static.tildacdn.info/tild3236-3936-4230-b432-656230613536/image-7.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3237-3230-4035-b438-306430336337/-/resize/600x/image-4.png" data-full="https://static.tildacdn.info/tild3237-3230-4035-b438-306430336337/image-4.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3265-6564-4738-a235-653163613130/-/resize/600x/image-13.png" data-full="https://static.tildacdn.info/tild3265-6564-4738-a235-653163613130/image-13.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3330-3131-4133-b764-386232376135/-/resize/600x/image-6.png" data-full="https://static.tildacdn.info/tild3330-3131-4133-b764-386232376135/image-6.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3335-6162-4837-b164-616562316466/-/resize/600x/image-8.png" data-full="https://static.tildacdn.info/tild3335-6162-4837-b164-616562316466/image-8.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3532-6630-4262-b830-306232383430/-/resize/600x/image-3.png" data-full="https://static.tildacdn.info/tild3532-6630-4262-b830-306232383430/image-3.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3639-3937-4365-a138-353665323934/-/resize/600x/image-9.png" data-full="https://static.tildacdn.info/tild3639-3937-4365-a138-353665323934/image-9.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild3939-3431-4639-a365-343464616538/-/resize/600x/image-10.png" data-full="https://static.tildacdn.info/tild3939-3431-4639-a365-343464616538/image-10.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6164-3237-4139-b630-323864623465/-/resize/600x/image-16.png" data-full="https://static.tildacdn.info/tild6164-3237-4139-b630-323864623465/image-16.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6231-3531-4732-b762-313030646633/-/resize/600x/image-11.png" data-full="https://static.tildacdn.info/tild6231-3531-4732-b762-313030646633/image-11.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6435-6462-4534-b034-633431333762/-/resize/600x/image-12.png" data-full="https://static.tildacdn.info/tild6435-6462-4534-b034-633431333762/image-12.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6437-3330-4136-b163-353238613335/-/resize/600x/image.png" data-full="https://static.tildacdn.info/tild6437-3330-4136-b163-353238613335/image.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6564-3535-4033-a662-643662316230/-/resize/600x/image-2.png" data-full="https://static.tildacdn.info/tild6564-3535-4033-a662-643662316230/image-2.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6565-6661-4764-a638-316534313465/-/resize/600x/image-1.png" data-full="https://static.tildacdn.info/tild6565-6661-4764-a638-316534313465/image-1.png"></figure><figure><img loading="lazy" alt="Отзыв клиента" src="https://static.tildacdn.info/tild6664-6333-4436-a335-373035313230/-/resize/600x/image-5.png" data-full="https://static.tildacdn.info/tild6664-6333-4436-a335-373035313230/image-5.png"></figure></div>
+  <div class="hint">Потяните или листайте</div>
+</section>
+
+<section class="gal" id="cx-gal"><div class="wrap">
+  <div class="hd rv"><div><div class="eyebrow">Галерея</div><h2>Моменты <em>праздника</em></h2></div><a class="btn line" href="#cx-contact">Хочу так же</a></div>
+  <div class="mos" data-gallery><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3232-3435-4461-b830-356664386635/-/resize/700x/IMG_7958.JPG" data-full="https://static.tildacdn.info/tild3232-3435-4461-b830-356664386635/-/resize/1600x/IMG_7958.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3066-3161-4036-a266-306333376633/-/resize/700x/photo_52874916883208.jpg" data-full="https://static.tildacdn.info/tild3066-3161-4036-a266-306333376633/-/resize/1600x/photo_52874916883208.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3264-3938-4130-a534-366361333465/-/resize/700x/5208791794215675824.jpg" data-full="https://static.tildacdn.info/tild3264-3938-4130-a534-366361333465/-/resize/1600x/5208791794215675824.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3062-6466-4237-a263-633462393363/-/resize/700x/5208791794215675790.jpg" data-full="https://static.tildacdn.info/tild3062-6466-4237-a263-633462393363/-/resize/1600x/5208791794215675790.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3231-3539-4334-a437-653362366233/-/resize/700x/IMG_7770.JPG" data-full="https://static.tildacdn.info/tild3231-3539-4334-a437-653362366233/-/resize/1600x/IMG_7770.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3261-6437-4930-b263-326639653565/-/resize/700x/photo_53322630673644.jpg" data-full="https://static.tildacdn.info/tild3261-6437-4930-b263-326639653565/-/resize/1600x/photo_53322630673644.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3166-6163-4832-b833-643630616462/-/resize/700x/IMG_7827.JPG" data-full="https://static.tildacdn.info/tild3166-6163-4832-b833-643630616462/-/resize/1600x/IMG_7827.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3536-3135-4234-a335-383736666637/-/resize/700x/IMG_6095.JPG" data-full="https://static.tildacdn.info/tild3536-3135-4234-a335-383736666637/-/resize/1600x/IMG_6095.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3131-3964-4632-a163-666438656266/-/resize/700x/IMG_7857.JPG" data-full="https://static.tildacdn.info/tild3131-3964-4632-a163-666438656266/-/resize/1600x/IMG_7857.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3131-3265-4432-b234-643063306432/-/resize/700x/5208791794215675606.jpg" data-full="https://static.tildacdn.info/tild3131-3265-4432-b234-643063306432/-/resize/1600x/5208791794215675606.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3137-6561-4531-b739-323238363738/-/resize/700x/IMG_7777.JPG" data-full="https://static.tildacdn.info/tild3137-6561-4531-b739-323238363738/-/resize/1600x/IMG_7777.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3838-6239-4236-b565-623237373331/-/resize/700x/IMG_7903.JPG" data-full="https://static.tildacdn.info/tild3838-6239-4236-b565-623237373331/-/resize/1600x/IMG_7903.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3466-3730-4936-a163-343830373364/-/resize/700x/IMG_7928.JPG" data-full="https://static.tildacdn.info/tild3466-3730-4936-a163-343830373364/-/resize/1600x/IMG_7928.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3332-3730-4334-a137-616537396131/-/resize/700x/IMG_7779.JPG" data-full="https://static.tildacdn.info/tild3332-3730-4334-a137-616537396131/-/resize/1600x/IMG_7779.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3161-6635-4830-b738-636633323838/-/resize/700x/IMG_7824.JPG" data-full="https://static.tildacdn.info/tild3161-6635-4830-b738-636633323838/-/resize/1600x/IMG_7824.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3038-3034-4539-a666-313637653464/-/resize/700x/IMG_7818.JPG" data-full="https://static.tildacdn.info/tild3038-3034-4539-a666-313637653464/-/resize/1600x/IMG_7818.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3430-3137-4836-a161-633532663031/-/resize/700x/IMG_7786.JPG" data-full="https://static.tildacdn.info/tild3430-3137-4836-a161-633532663031/-/resize/1600x/IMG_7786.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3035-6635-4439-b666-316333306536/-/resize/700x/IMG_7880.JPG" data-full="https://static.tildacdn.info/tild3035-6635-4439-b666-316333306536/-/resize/1600x/IMG_7880.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3037-3935-4331-a235-336236386662/-/resize/700x/IMG_7867.JPG" data-full="https://static.tildacdn.info/tild3037-3935-4331-a235-336236386662/-/resize/1600x/IMG_7867.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3736-6432-4666-a136-623034616566/-/resize/700x/IMG_7883.JPG" data-full="https://static.tildacdn.info/tild3736-6432-4666-a136-623034616566/-/resize/1600x/IMG_7883.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3339-6261-4132-b539-613133653965/-/resize/700x/IMG_7814.JPG" data-full="https://static.tildacdn.info/tild3339-6261-4132-b539-613133653965/-/resize/1600x/IMG_7814.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3130-3539-4133-b038-366161626161/-/resize/700x/IMG_7877.JPG" data-full="https://static.tildacdn.info/tild3130-3539-4133-b038-366161626161/-/resize/1600x/IMG_7877.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3362-3430-4434-b134-333637633831/-/resize/700x/IMG_7806.JPG" data-full="https://static.tildacdn.info/tild3362-3430-4434-b134-333637633831/-/resize/1600x/IMG_7806.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3636-3034-4638-b863-396336656266/-/resize/700x/IMG_7902.JPG" data-full="https://static.tildacdn.info/tild3636-3034-4638-b863-396336656266/-/resize/1600x/IMG_7902.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3231-3331-4132-b561-326238643539/-/resize/700x/IMG_7870.JPG" data-full="https://static.tildacdn.info/tild3231-3331-4132-b561-326238643539/-/resize/1600x/IMG_7870.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3234-3530-4737-a361-343862353536/-/resize/700x/IMG_7908.JPG" data-full="https://static.tildacdn.info/tild3234-3530-4737-a361-343862353536/-/resize/1600x/IMG_7908.JPG"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3332-6662-4530-b938-626664643337/-/resize/700x/5208791794215676191.jpg" data-full="https://static.tildacdn.info/tild3332-6662-4530-b938-626664643337/-/resize/1600x/5208791794215676191.jpg"></figure><figure><img loading="lazy" alt="Елена Голливудова на празднике" src="https://static.tildacdn.info/tild3238-3133-4132-b731-656664383763/-/resize/700x/IMG_7950.JPG" data-full="https://static.tildacdn.info/tild3238-3133-4132-b731-656664383763/-/resize/1600x/IMG_7950.JPG"></figure></div>
+</div></section>
+
+<section class="why"><div class="wrap">
+  <div class="eyebrow">Почему я?</div>
+  <div class="num rv">1000</div>
+  <h3 class="rv">проведённых мероприятий</h3>
+  <p class="rv">Лично придуманных и реализованных проектов. Грамотная речь, презентабельная внешность, лёгкость и непринуждённость в ведении, а главное — невероятное обаяние.</p>
+</div></section>
+
+<section class="contact" id="cx-contact"><div class="wrap">
+  <div class="eyebrow">Контакты</div>
+  <h2 class="rv">Сделайте вашу жизнь <em>ярче</em></h2>
+  <div class="links rv">
+    <a class="btn" href="https://wa.me/79052258710?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%B0%D0%B7%D0%B4%D0%BD%D0%B8%D0%BA!" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn line" href="https://t.me/Hollywoodovna" target="_blank" rel="noopener">Telegram</a>
+    <a class="btn line" href="https://www.instagram.com/elena_hollywoodova" target="_blank" rel="noopener">Instagram*</a>
+  </div>
+  <p class="tel">Телефон <a href="tel:+79052258710">+7 905 225-87-10</a></p>
+  <p class="note">*Instagram признан экстремистской организацией и запрещён на территории РФ</p>
+</div></section>
+
+</div>
+
+<script>
+/* Только украшения: плавное появление блоков и увеличение фото по клику.
+   Фото и тексты лежат прямо в HTML выше — без этого скрипта страница тоже полностью работает. */
+var EH = {
+  mount: function (root) {
+    var list = function (sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); };
+    var items = list('.rv');
+    if ('IntersectionObserver' in window) {
+      root.classList.add('eh-js');
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      items.forEach(function (n) { io.observe(n); });
+    }
+    // шапка уезжает вверх при прокрутке вниз и возвращается при прокрутке вверх
+    var nav = root.querySelector('.nav');
+    if (nav) {
+      var lastY = window.pageYOffset || 0, hidden = false, busy = false;
+      nav.style.transition = (nav.style.transition ? nav.style.transition + ',' : '') + 'transform .4s ease';
+      var setHidden = function (h) {
+        if (h === hidden) return;
+        hidden = h;
+        nav.style.transform = h ? 'translateY(-110%)' : '';
+      };
+      window.addEventListener('scroll', function () {
+        if (busy) return;
+        busy = true;
+        (window.requestAnimationFrame || setTimeout)(function () {
+          var y = window.pageYOffset || 0, d = y - lastY;
+          if (y < 80) setHidden(false);
+          else if (d > 8) setHidden(true);
+          else if (d < -8) setHidden(false);
+          if (Math.abs(d) > 8 || y < 80) lastY = y;
+          busy = false;
+        });
+      }, { passive: true });
+      root.addEventListener('focusin', function (e) { if (nav.contains(e.target)) setHidden(false); });
+    }
+    var box = document.createElement('div');
+    box.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out';
+    var im = document.createElement('img');
+    im.style.cssText = 'max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 20px 80px rgba(0,0,0,.6)';
+    box.appendChild(im);
+    box.onclick = function () { box.style.display = 'none'; };
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') box.style.display = 'none'; });
+    document.body.appendChild(box);
+    root.addEventListener('click', function (e) {
+      var t = e.target;
+      if (t.tagName === 'IMG' && t.getAttribute('data-full')) {
+        im.src = t.getAttribute('data-full');
+        box.style.display = 'flex';
+      }
+    });
+  }
+};
+
+(function(){
+  var root=document.getElementById('cx'); if(!root) return;
+  EH.mount(root);
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var raf=window.requestAnimationFrame||function(f){return setTimeout(f,16)};
+  function $(s,c){return (c||root).querySelector(s)}
+  function $$(s,c){return Array.prototype.slice.call((c||root).querySelectorAll(s))}
+
+  /* бесшовная бегущая строка образов */
+  $$('.lrow').forEach(function(r){
+    var t=$('.trk',r); if(!t) return;
+    var c=t.cloneNode(true); c.removeAttribute('data-looks'); c.setAttribute('aria-hidden','true'); r.appendChild(c);
+  });
+  var rowB=$('.lrow.b'); if(rowB){ var tb=$('.trk',rowB); for(var i=0;i<tb.children.length;i+=2) tb.appendChild(tb.children[i]); }
+
+  /* слова подсвечиваются по мере прокрутки */
+  var big=$('#cx-big');
+  var words=[];
+  if(big && !reduce){
+    (function wrapNodes(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var frag=document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(p){
+            if(!p) return;
+            if(/^\s+$/.test(p)){ frag.appendChild(document.createTextNode(' ')); return; }
+            var s=document.createElement('span'); s.className='w'; s.textContent=p; frag.appendChild(s); words.push(s);
+          });
+          node.replaceChild(frag,n);
+        } else if(n.nodeType===1){ wrapNodes(n); }
+      });
+    })(big);
+  }
+
+  /* счётчики */
+  var counters=$$('[data-count]');
+  counters.forEach(function(c){ c._to=+c.getAttribute('data-count'); });
+  if('IntersectionObserver' in window && !reduce){
+    var co=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return; co.unobserve(e.target);
+        var el=e.target, to=el._to, t0=null;
+        function step(ts){ if(!t0) t0=ts; var p=Math.min(1,(ts-t0)/1600); var v=Math.round(to*(1-Math.pow(1-p,3))); el.textContent=v; if(p<1) raf(step); }
+        el.textContent='0'; raf(step);
+      });
+    },{threshold:.5});
+    counters.forEach(function(c){co.observe(c)});
+  }
+
+  /* перетаскивание ленты отзывов */
+  var rail=$('#cx-rail');
+  if(rail){
+    var down=false,sx=0,sl=0,moved=false;
+    rail.addEventListener('mousedown',function(e){down=true;moved=false;sx=e.pageX;sl=rail.scrollLeft;rail.classList.add('drag')});
+    window.addEventListener('mouseup',function(){down=false;rail.classList.remove('drag')});
+    window.addEventListener('mousemove',function(e){if(!down)return;var d=e.pageX-sx;if(Math.abs(d)>3)moved=true;rail.scrollLeft=sl-d});
+    rail.addEventListener('click',function(e){if(moved){e.stopPropagation();e.preventDefault()}},true);
+  }
+
+  /* курсор */
+  var cur=null;
+  if(!reduce && window.matchMedia && window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+    cur=document.createElement('div'); cur.className='cx-cur'; document.body.appendChild(cur);
+    var cx=0,cy=0,tx=0,ty=0;
+    window.addEventListener('mousemove',function(e){tx=e.clientX;ty=e.clientY;cur.classList.add('on');
+      var t=e.target; cur.classList.toggle('big',!!(t.closest&&t.closest('a,button,img[data-full],.lrow span,.svc li')));});
+    document.addEventListener('mouseleave',function(){cur.classList.remove('on')});
+    (function loop(){cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;cur.style.left=cx+'px';cur.style.top=cy+'px';raf(loop)})();
+  }
+
+  /* прокрутка: шапка, слова, линия шагов, параллакс галереи */
+  var nav=$('#cx-nav'), tl=$('#cx-tl'), fill=$('#cx-fill'), steps=$$('.st'), mos=$$('.mos figure');
+  var ticking=false;
+  function update(){
+    ticking=false;
+    var vh=window.innerHeight, sy=window.pageYOffset||document.documentElement.scrollTop;
+    if(nav) nav.classList.toggle('sc',sy>60);
+    if(words.length){
+      var r=big.getBoundingClientRect();
+      var p=(vh*0.82-r.top)/(r.height+vh*0.25); p=Math.max(0,Math.min(1,p));
+      var n=Math.round(p*words.length);
+      for(var i=0;i<words.length;i++) words[i].classList.toggle('on',i<n);
+    }
+    if(tl&&fill){
+      var tr=tl.getBoundingClientRect();
+      var pr=(vh*0.6-tr.top)/tr.height; pr=Math.max(0,Math.min(1,pr));
+      fill.style.height=(pr*100)+'%';
+      steps.forEach(function(s){ var sr=s.getBoundingClientRect(); s.classList.toggle('on',sr.top<vh*0.62); });
+    }
+    if(!reduce && window.innerWidth>980){
+      mos.forEach(function(f,i){
+        var fr=f.getBoundingClientRect(); var mid=fr.top+fr.height/2-vh/2;
+        var k=(i%3===0)?-0.06:(i%3===1)?0.05:-0.1;
+        f.style.transform='translateY('+(mid*k).toFixed(1)+'px)';
+      });
+    } else { mos.forEach(function(f){f.style.transform=''}); }
+  }
+  function onScroll(){ if(!ticking){ticking=true;raf(update)} }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  update();
+})();
+</script>
+</body></html>
